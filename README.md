@@ -28,7 +28,8 @@
 <img src="https://user-images.githubusercontent.com/94813193/158070627-3e166b4b-ccd8-46f7-be28-0d5bfc80aaba.png" width="500" height="280">
 
 # Deployed Link
-<a href="https://ea-note-taker.herokuapp.com/">Heroku: Note Taker</a>
+* <a href="https://ea-note-taker.herokuapp.com/">Heroku: Note Taker</a>
+* <a href="https://eddielo26.github.io/EA-Note-Taker/">GitHub: Note Taker</a>
 
 # Installation
 * Download or clone repository
