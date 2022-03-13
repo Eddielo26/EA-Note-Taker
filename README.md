@@ -22,7 +22,10 @@
 * Using <code>get</code> to retrieve previously saved notes
 * Using <code>post</code> to post new notes
 * Using <code>delete</code> to remove saved notes
+
 # Image
+<img src="https://user-images.githubusercontent.com/94813193/158070583-083fdcd0-f1a5-4960-95d9-d3d8a3e8ccc8.png" width="500" height="280">
+<img src="https://user-images.githubusercontent.com/94813193/158070627-3e166b4b-ccd8-46f7-be28-0d5bfc80aaba.png" width="500" height="280">
 
 # Deployed Link
 <a href="https://ea-note-taker.herokuapp.com/">Heroku: Note Taker</a>
