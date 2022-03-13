@@ -29,7 +29,6 @@
 
 # Deployed Link
 * <a href="https://ea-note-taker.herokuapp.com/">Heroku: Note Taker</a>
-* <a href="https://eddielo26.github.io/EA-Note-Taker/">GitHub: Note Taker</a>
 
 # Installation
 * Download or clone repository
