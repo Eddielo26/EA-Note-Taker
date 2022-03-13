@@ -1,6 +1,6 @@
 const express = require('express');
-const app = express()
 const PORT = process.env.PORT || 3001;
+const app = express()
 const fs = require('fs');
 const path = require('path');
 
@@ -78,6 +78,5 @@ app.delete('/api/notes/:id', (req, res) => {
 
 // start server to begin listing
 app.listen(PORT, () => {
-   
- console.log(`API server now on port ${PORT}!`);
-});
+    console.log(`API server now on port ${PORT}!`);
+  });
