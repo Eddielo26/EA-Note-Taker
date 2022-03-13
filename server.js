@@ -29,7 +29,7 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
-// create new notes to add to db.json 
+// create new notes to add w/unique ID to db.json 
 function createNewNote(body, notesArray) {
     const newNote = body;
     if (!Array.isArray(notesArray))
@@ -52,6 +52,28 @@ function createNewNote(body, notesArray) {
 app.post('/api/notes', (req, res) => {
     const newNote = createNewNote(req.body, allNotes);
     res.json(newNote);
+});
+
+// function to remove saved notes from db.json file 
+function deleteNote(id, notesArray) {
+    for (let i = 0; i < notesArray.length; i++) {
+        let note = notesArray[i];
+
+        if (note.id == id) {
+            notesArray.splice(i, 1);
+            fs.writeFileSync(
+                path.join(__dirname, './db/db.json'),
+                JSON.stringify(notesArray, null, 2)
+            );
+
+            break;
+        }
+    }
+}
+// delete saved noted 
+app.delete('/api/notes/:id', (req, res) => {
+    deleteNote(req.params.id, allNotes);
+    res.json(true);
 });
 
 // start server to begin listing
